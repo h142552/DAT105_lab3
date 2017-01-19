@@ -27,4 +27,6 @@ public:
     void innskudd(int, int);
     int uttak(int);
     int uttak(int, int);
+
+    Spiller_konto& operator+(Spiller_konto&);
 };

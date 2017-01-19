@@ -1,9 +1,9 @@
-#include "Spiller_konto.h"
+#include "spiller_konto.h"
 
 /* 
  * TODO
- *  sette en id til spiller og konto
- *  rand? inc?
+ * sjekk kontotype
+ * bitcoins har upper limit
  *
  */
 
@@ -40,4 +40,10 @@ int Spiller_konto::uttak(int uttak) {
     }
 
     return uttak;
+}
+
+Spiller_konto& Spiller_konto::operator+(Spiller_konto& rhs) {
+    this->innskudd(rhs.uttak(rhs.get_beholdning()));
+    return *this;
+
 }

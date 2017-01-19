@@ -1,5 +1,5 @@
 #pragma once
-#include "Spiller_konto.h"
+#include "spiller_konto.h"
 
 class Spill_transaksjoner {
     private:

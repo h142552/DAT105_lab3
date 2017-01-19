@@ -1,4 +1,4 @@
-#include "Spiller_konto.h"
+#include "spiller_konto.h"
 #include "spill_transaksjoner.h"
 #include <iostream>
 #include <vector>
@@ -22,6 +22,8 @@ int main() {
     Spill_transaksjoner {v.at(0), v.at(3), 600};
     print_vector(v);
 
+    v.at(1) + v.at(3);
+    print_vector(v);
 
     return 0;
 }
